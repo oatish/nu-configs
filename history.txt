@@ -1,0 +1,418 @@
+ls
+echo $env.shell
+echo $env.SHELL
+$SHELL
+$env.SHELL
+ls
+hop --version
+nvim ~/.bashrc
+echo $env.SHELL
+ls
+cd ~/.config/nushell
+which nu
+echo $env.config
+echo $env.config-path
+echo $nu.config-path
+echo $nu.env-path
+cd ~/AppData/Roaming/nushell
+ls
+nvim env.nu
+LS
+ls
+echo $nu.env-path
+cd ~/AppData/Roaming/nushell
+ls
+nvim env.nu
+source env.nu
+py
+ls
+hop nvconf
+nvim ~/.bashrc
+nvim env.nu
+source env.nu
+hop nvconf
+ls
+dump
+ls
+fd "*Userssteph*" -x echo
+fd -p "*Userssteph*" -x echo
+fd -g "*Userssteph*" -x echo
+echo new one
+fd -g "*Userssteph*" -x rm
+find . -name "*Userssteph*"
+ls "*Usersteph*"
+ls *Usersteph*
+ls
+ls CDUser*
+ls *Tempnvim.*
+ls *Tempnvim.* | rm
+ls *Tempnvim.* | get name
+ls *Tempnvim.* | get name | rm
+ls *Tempnvim.* | select name | rm
+ls *Tempnvim.* | each { rm $in.name }
+ls
+nvim $nu.env-path
+nvim $nu.config-path
+ls
+cd ~/AppData/Local/nvim-temp
+ls
+nvim init.vim
+ls
+pacman --version
+ls
+nvim q
+rm q
+ls
+cd Users
+ls
+cd steph
+ls
+cd .conf
+cd .config
+ls
+cd ...
+cd ..
+rm Users
+rm -r Users
+ls
+git status
+ls
+winget install starship
+cd /
+ls
+ls | rg ms
+ls | get name
+ls | get name | rg msys
+ls | select name
+ls.name
+ls | select name | take 1
+ls | get name.name
+ls | get name
+ls | get name | print
+ls | get name | echo
+ls | get name | each { echo $in }
+ls | get name
+ls | get name | take 1
+ls | get name | into string
+ls | get name | less
+ls | get name | table
+ls | get name | table --collapse
+ls | get name | table -n
+ls | get name | table -n 1
+ls | get name
+ls | get name | lines
+ls | lines
+l
+ls | get name | lines
+ls | get name | into string | lines
+nvim $nu.env-path
+source $nu.env-path
+ls
+source $nu.env-config
+echo $nu.env-path
+source $nu.env-path
+source C:\Users\steph\Appdata\Roaming\nushell\env.nu
+ls
+ls | get name
+ls
+ls | fnk map -f '|s| -> s'
+ls
+ls | get name | into string
+ls | get name | drop index
+source C:\Users\steph\Appdata\Roaming\nushell\env.nu
+ls
+ls | get name
+ls
+ls | get name
+ls | get name | rg fonts
+ls | get name | rg Fonts
+ls | rg Fonts
+ls
+ls | get size
+ls | get size | split column " "
+ls | split column " "
+ls | get size | into string | split column " "
+ls | get size | into string | split column " " | get column1
+ls | get size | into string | split column " " | get column1 | into int
+ls | get size | into string | split column " " | get column1 | into decimal
+ls | get size | into string | split column " " | get column1 | into decimal | math sum
+ls | get size | into string | split column " " | get column1 | into decimal | math sum | into int
+ls | get size | into string | split column " " | get column1 | into decimal | math sum
+ls
+starship --version
+echo $nu.env-path
+cd $nu.config
+cd C:\Users\steph\AppData\Roaming\nushell
+ls
+starship init nu | save starship.nu
+ls
+nvim starship.nu
+nvim config.nu
+nvim env.nu
+source env.nu
+ls
+echo $env.STARSHIP_CONFIG
+ls
+cd ~/.config
+ls
+touch starship.toml
+nvim starship.toml
+echo $env.PWD
+ls
+nvim starship.nu
+ls
+cd ~/AppData/Roaming/nushell
+ls
+source env.nu
+ls
+nvim env.nu
+nvim starship.nu
+nvim env.nu
+ls
+cd ~/AppData/Roaming/nushell
+source env.nu
+ls
+nvim env.nu
+hop ls
+cd ~/AppData/Roaming/nushell
+ls
+nvim config.nui
+nvim config.nu
+ls
+nvim starship.nu
+ls
+source env.nu
+ls
+cd ~/AppData/Roaming/nushell
+ls
+source ~/starship.nu
+source starship.nu
+ls
+nvim config.nu
+cat starship.nu
+open starship.nu
+open starship.nu | copy
+open starship.nu | pbcopy
+open starship.nu | clip
+ls
+cd ~/AppData/Roaming/nushell
+ls
+rm starship.nu
+ls
+nvim env.nu
+ls
+nvim env.nu
+ls
+cd ~/AppData/Roaming/nushell
+ls
+nvim env.nu
+ls
+cd ~/.config
+ls
+nvim starship.toml
+ls
+cd ~/.config
+ls
+echo $env.PWD
+cd ~/AppData/Roaming/nushell
+ls
+cd ~/AppData/Roaming/nushell
+source env.nu
+ls
+hop hop
+ls
+cd ~/AppData/Roaming/nushell
+hop add nuconf
+hop ls
+hop nvconf
+hop nuconf
+ls
+nvim env.nu
+cd ~/.config
+ls
+hop ls
+ls
+cd ~/AppData/Roaming/nushell
+ls
+hop ls
+cd ~/AppData/Roaming/nushell
+hop ls
+hop hop
+hop nvconf
+hop ls
+🌵hop nuconf
+hop nuconf
+nvim env.nu
+hop ls
+source env.nu
+hop ls
+echo "bus-rs -> C:\Users\steph\Projects\aacps-bus-notifier-blazingly-fast<\n> 2 │ │   hop -> C:\Users\steph\Projects\hop<\n> 3 │ │   metaform -> C:\Users\steph\Projects\metaform<\n> 4 │ │   notes -> C:\Users\steph\Notes<\n> 5 │ │   nuconf -> C:\Users\steph\AppData\Roaming\nushell<\n> 6 │ │   nvconf -> C:\Users\steph\AppData\Local\nvim<\n> 7 │ │   projects -> C:\Users\steph\Projects<\n> 8 │ │   scripts -> C:\Users\steph\scripts<\n> 9 │ ├─▶ soros -> C:\Users\steph\Projects\discord-librarian"
+echo $env.SHELL
+echo "alias py = (python3.11)<\n>alias pynv = (source venv/bin/activate.nu)<\n>alias dump = (ls *Tempnvim.* | each { rm $in.name })"
+hop ls
+bash "echo ya"
+bash -c "echo ya"
+hop ls
+cd ~/.config
+ls
+cd ~/.config
+hop nuconf
+ls
+nu --version
+(version).version
+$env | get -i config
+$env | get -i config | is-empty
+ls
+cd ~/AppData/Roaming/nushell
+source env.nu
+ls
+hop nuconf
+hop hop
+ls
+starship prompt
+sharship config
+ls
+cd ~/AppData/Roaming/nushell
+ls
+starship init nu | save starship.nu
+ls
+cd ~/.config
+echo $env.PWD
+ls
+cd ~/AppData/Roaming/nushell
+source env.nu
+cd ~/AppData/Roaming/nushell
+source env.nu
+ls
+cd ~/AppData/Roaming/nushell
+ls
+source env.nu
+hop ls
+source env.nu
+cd ~/AppData/Roaming/nushell
+source env.nu
+ls
+hop hop
+ls
+cd
+ls | get name
+ls | get name type
+ls | select name type
+ls | select name type | merge [{name: "A0*"}]
+ls | insert com { $in.name | $in.type }
+ls | insert com { $in.name + " " + $in.type }
+ls | insert com { $in.name + " " + $in.size } | get com
+ls | insert com { $in.name + " " + $in.size }
+ls | insert com { $in.name + " " + $in.size into string } | get com
+ls | into string size | insert com { $in.name + " " + $in.size } | get com
+history
+hop hop
+ls
+git status
+ls
+cd src
+ls
+cd ..
+ls
+cd runners
+ls
+dump
+ls
+cd ..
+ls
+git status
+cd temp_sh
+nvim temp_sh
+rm temp_sh
+ls
+git add runners/add_runners_*
+ls
+git status
+nvim runner.ps1
+nvim runners/runner.ps1
+cd nvim
+ls
+cd runners
+ls
+nvim runner.ps1
+rm runner.ps1
+ls
+cd ..
+ls
+git status
+git commit -m "windows updates"
+git push origin master
+git pull origin master
+git status
+git checkout -b develop
+ls
+du
+cargo install du-dust
+dust
+neofetch
+scoop install neofetch
+neofetch
+ls
+cd tests
+ls
+wsl --shutdown
+neofetch
+hop hop
+ls
+cd system
+cd programs
+ls
+curl https://github.com/libgit2/libgit2/archive/refs/tags/v1.5.1.zip
+ls
+curl https://github.com/libgit2/libgit2/archive/refs/tags/v1.5.1.zip
+ls
+ls | get name
+ls | get name | rg libgit2-1.5.1
+unzip libgit2-1.5.1 ~/Programs/libgit
+echo $env.PATH
+echo $env.Path
+echo $env.Path | rg scripts
+cd ~/AppData/Local/cli
+cd ~/AppData/Local/
+mkdir cli
+cd cli
+ls
+cp C:\Users\steph\Downloads\Web\unzip.exe unzip.exe
+ls
+unzip --version
+ls
+cd Downloads\Web
+ls
+ls | rg lib
+cd ~/Programs
+ls
+cp C:\Users\steph\Downloads\Web\libgit2-1.5.1.zip libgit2.zip
+ls
+hop hop
+unzip libgit2.zip
+ls
+rm ligbit2.zip
+ls
+rm libgit2.zip
+ls
+cd libgit2-1.5.1
+ls
+hop hop
+ls
+ls
+hop nuconf
+cd
+git clone git@github.com:gnoat/nu-conf.git
+cp -rf nushell/* nu-conf.git
+cp -r nushell/* nu-conf.git
+ls
+cd ~/AppData/Local/Roaming
+cd ~/AppData/Local/
+cd ..
+cd Roaming
+ls
+cp -r nushell/* nu-conf.git
+ls
+git clone git@github.com:gnoat/nu-conf.git
+ls
+cp -r nushell/* nu-conf.git
