@@ -29,7 +29,7 @@ let-env NU_PLUGIN_DIRS = [
     ($nu.config-path | path dirname | path join 'plugins')
 ]
 
-alias py = (python3.11)
+alias py = python3.11
 alias pynv = (source venv/bin/activate.nu)
 alias dump = (ls *Tempnvim.* | each { rm $in.name })
 
