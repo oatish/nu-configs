@@ -31,7 +31,6 @@ let-env NU_PLUGIN_DIRS = [
 
 alias py = (python3.11)
 alias pynv = (source venv/bin/activate.nu)
-alias dump = (ls *Tempnvim.* | each { rm $in.name })
 
 # To add entries to PATH (on Windows you might use Path), you can use the following pattern:
 # let-env PATH = ($env.PATH | split row (char esep) | prepend '/some/path')
@@ -47,46 +46,5 @@ def-env hop [cmd: string, p2: string = "", p3: string = ""] {
     }
     cd $new_loc
 }
-let-env STARSHIP_SHELL = "nu"
-let-env STARSHIP_SESSION_KEY = (random chars -l 16)
-let-env PROMPT_MULTILINE_INDICATOR = (^'C:\Program Files\starship\bin\starship.exe' prompt --continuation)
 
-# Does not play well with default character module.
-# TODO: Also Use starship vi mode indicators?
-let-env PROMPT_INDICATOR = ""
-let-env STARSHIP_CONFIG = ^'C:\Users\steph\.config\starship.toml'
-let-env PROMPT_COMMAND = {
-    # jobs are not supported
-    let width = (term size).columns
-    ^'C:\Program Files\starship\bin\starship.exe' prompt $"--cmd-duration=($env.CMD_DURATION_MS)" $"--status=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)"
-}
-
-# Whether we can show right prompt on the last line
-let has_rprompt_last_line_support = (version).version >= 0.71.0
-
-# Whether we have config items
-let has_config_items = (not ($env | get -i config | is-empty))
-
-if $has_rprompt_last_line_support {
-    let config = if $has_config_items {
-        $env.config | upsert render_right_prompt_on_last_line true
-    } else {
-        {render_right_prompt_on_last_line: true}
-    }
-    {config: $config}
-} else {
-    { }
-} | load-env
-
-let-env PROMPT_COMMAND_RIGHT = {
-    if $has_rprompt_last_line_support {
-        let width = (term size).columns
-        ^'C:\Program Files\starship\bin\starship.exe' prompt --right $"--cmd-duration=($env.CMD_DURATION_MS)" $"--status=($env.LAST_EXIT_CODE)" $"--terminal-width=($width)"
-    } else {
-        ''
-    }
-}
-
-let-env PROMPT_INDICATOR_VI_INSERT = "-> "
-let-env PROMPT_INDICATOR_VI_NORMAL = "=> "
-let-env PROMPT_MULTILINE_INDICATOR = "::: "
+source ~/.cache/starship/init.nu

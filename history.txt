@@ -416,3 +416,24 @@ ls
 git clone git@github.com:gnoat/nu-conf.git
 ls
 cp -r nushell/* nu-conf.git
+nvim env.nu
+ls
+cd nushell
+ls
+nvim env.nu
+cd nushell
+ls
+cd ~/.config/nushell
+ls
+rm starship.nu
+mkdir ~/.cache/starship
+starship init nu | save -f ~/.cache/starship.init.nu
+ls
+cd .cache
+ls
+mv ~/.cache/starship.init.nu ~/.cache/starship/init.nu
+nvim ~/.cache/starship/init.nu
+nu
+nvim env.nu
+git status
+git checkout -b arch
