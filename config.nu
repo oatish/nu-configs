@@ -820,6 +820,7 @@ alias gls = echo ($git_shorts | str join "\n")
 alias gfields = echo ($git_atoms | str join "\n")
 alias shrt = echo (["sk - skim (fzf)", "rg - ripgrep (grep)", "bat - bat (cat)", "exa - exa (ls)", "fd - fd (find)", "hp - bhop (cd)"] | str join "\n")
 alias dx = databricks
+alias cat = bat --paging=never --decorations=never
 
 # the below garbage exists solely to allow me to dynamically source files
 # nushell is garbage-o
